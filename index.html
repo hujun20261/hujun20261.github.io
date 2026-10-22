@@ -28,8 +28,8 @@
         .search-input { width: 100%; height: 46px; border: none; border-radius: 23px; padding: 0 20px; font-size: 16px; background: rgba(255,255,255,0.12); color: #fff; }
         .search-input::placeholder { color: rgba(255,255,255,0.4); }
 
-        .legend { display: flex; flex-wrap: nowrap; gap: 6px; padding: 0 12px 12px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
-        .legend-item { display: flex; align-items: center; gap: 5px; font-size: 13px; padding: 5px 10px; background: rgba(255,255,255,0.08); border-radius: 15px; flex-shrink: 0; white-space: nowrap; }
+        .legend { display: flex; flex-wrap: nowrap; gap: 8px; padding: 0 15px 12px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; justify-content: space-between; }
+        .legend-item { display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 13px; padding: 8px 12px; background: rgba(255,255,255,0.08); border-radius: 15px; flex: 1; white-space: nowrap; }
         .legend-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
 
         .school-list { padding: 0 15px 100px; }
@@ -66,8 +66,8 @@
         .detail-page { display: none; }
 
         /* flex-wrap: wrap 兜底：极端窄屏自动换行，保证标签永不裁切、永不滑动 */
-        .grade-tabs { display: flex; flex-wrap: nowrap; gap: 6px; padding: 12px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
-        .grade-tab, .lesson-leader-tab { flex-shrink: 0; padding: 10px 12px; border-radius: 17px; font-size: 13px; font-weight: 600; border: none; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); cursor: pointer; white-space: nowrap; }
+        .grade-tabs { display: flex; flex-wrap: nowrap; gap: 12px; padding: 12px 15px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; justify-content: space-between; }
+        .grade-tab, .lesson-leader-tab { flex: 1; padding: 10px 12px; border-radius: 17px; font-size: 13px; font-weight: 600; border: none; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); cursor: pointer; white-space: nowrap; text-align: center; }
         .grade-tab.active { background: linear-gradient(135deg, #4fc3f7, #2196f3); color: #fff; }
 
         .office-list { padding: 0 15px 100px; }
