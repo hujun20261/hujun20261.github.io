@@ -476,7 +476,7 @@
 
             /* 全宽背景 + 内容限宽 1100px 居中（全出血内边距） */
             .header, .search-bar, .legend, .swipe-hint, .school-list, .office-list,
-            .grade-tabs, .lesson-leader-view, .edit-toolbar {
+            .grade-tabs, .lesson-leader-view, .edit-toolbar, .office-nav {
                 padding-left: max(15px, calc(50% - 550px));
                 padding-right: max(15px, calc(50% - 550px));
             }
@@ -1437,7 +1437,7 @@
 
             detailView.innerHTML = `
                 <div style="padding:15px;">
-                    <div class="office-nav" style="display:flex;align-items:center;gap:10px;margin-bottom:15px;">
+                    <div class="office-nav" style="display:flex;align-items:center;gap:10px;margin-bottom:15px;padding-left:15px;padding-right:15px;">
                         <button class="back-btn" onclick="renderOffices()">← 返回列表</button>
                         <span style="color:rgba(255,255,255,0.5);">|</span>
                         <span style="color:#4fc3f7;font-weight:600;font-size:23px;">${office.name}</span>
